@@ -149,7 +149,7 @@ If you make a sucessfull request with the valid token then you will get the foll
  ```
  HEADER => Authorization : <the token form the login response > 
  ```
- In General you can perform the following CRUD actions on t: 
+ In General you can perform the following CRUD actions on(```https://hyf-almuni.herokuapp.com/alumni```): 
  
  
 | METHOD        | ROUTE         | Description  |
@@ -323,4 +323,121 @@ If you make a sucessfull request with the valid token then you will get the foll
 
 
 
-
+With the company Token ONLY comapnies can ACESS this route ((```https://hyf-almuni.herokuapp.com/alumni/```)) and get all alumni information.
+expample 
+```js
+{
+            "cv": [],
+            "profileImage": [],
+            "userType": "alumni",
+            "isActive": true,
+            "jobTitle": "frontend",
+            "languages": [
+                {
+                    "rate": "3",
+                    "_id": "5f1ec432ffda78001768d310",
+                    "student": "5f1ec412ffda78001768d303",
+                    "language": "english",
+                    "__v": 0
+                },
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d311",
+                    "student": "5f1ec412ffda78001768d303",
+                    "language": "Dutch",
+                    "__v": 0
+                },
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d312",
+                    "student": "5f1ec412ffda78001768d303",
+                    "language": "French",
+                    "__v": 0
+                }
+            ],
+            "skills": [
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d305",
+                    "student": "5f1ec412ffda78001768d303",
+                    "skill": "javascript",
+                    "__v": 0
+                },
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d306",
+                    "student": "5f1ec412ffda78001768d303",
+                    "skill": "CSS",
+                    "__v": 0
+                },
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d304",
+                    "student": "5f1ec412ffda78001768d303",
+                    "skill": "HTML",
+                    "__v": 0
+                },
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d307",
+                    "student": "5f1ec412ffda78001768d303",
+                    "skill": "nodejs",
+                    "__v": 0
+                },
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d308",
+                    "student": "5f1ec412ffda78001768d303",
+                    "skill": "mysql",
+                    "__v": 0
+                },
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d30e",
+                    "student": "5f1ec412ffda78001768d303",
+                    "skill": "react",
+                    "__v": 0
+                },
+                {
+                    "rate": "5",
+                    "_id": "5f1ec432ffda78001768d314",
+                    "student": "5f1ec412ffda78001768d303",
+                    "skill": "mongodb",
+                    "__v": 0
+                }
+            ],
+            "media": [
+                {
+                    "_id": "5f1ec432ffda78001768d313",
+                    "media": "GitHub",
+                    "student": "5f1ec412ffda78001768d303",
+                    "url": "qwert",
+                    "__v": 0
+                },
+                {
+                    "_id": "5f1ec432ffda78001768d316",
+                    "media": "LinkedIn",
+                    "student": "5f1ec412ffda78001768d303",
+                    "url": "qwert",
+                    "__v": 0
+                },
+                {
+                    "_id": "5f1ef9bf4e80b70017c8b36a",
+                    "media": "GitHub",
+                    "student": "5f1ec412ffda78001768d303",
+                    "url": "GitHub",
+                    "__v": 0
+                }
+            ],
+            "projects": [],
+            "_id": "5f1ec412ffda78001768d303",
+            "name": "Mert",
+            "surname": "Demirok",
+            "email": "mert1@gmail.com",
+            "hash": "569400dc5943bb1d0bfb8280446932e89c43ed4c40bf4696ea1bf3f5a03b02e50066b020853c5c56401043e447ecb5d199668e085efb222c90d3e453414926b8",
+            "salt": "5dae040c55ca5cc7831883fab0c39e45c2c4ae6e48cc381da72c253bce0ab86e",
+            "registeredDate": "2020-07-27T12:09:54.625Z",
+            "__v": 13,
+            "about": "I love coding"
+        }
+        
