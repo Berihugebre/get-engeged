@@ -47,7 +47,8 @@ Now let's EACH ENDPOINTS
     "surname": "hyf",
     "email":"user@gmail.com",
     "password": "123456"
- } ```
+ } 
+ ```
 
 #### b. login an Alumni 
 
@@ -57,7 +58,8 @@ Now let's EACH ENDPOINTS
   {
     "email":"user@gmail.com",
     "password": "123456"
- } ```
+ } 
+ ```
  
  after login you will get the following response :
  ```js
