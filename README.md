@@ -35,9 +35,18 @@ This application is deployed on Heroku with [This](https://hyf-almuni.herokuapp.
 
 Now let's EACH ENDPOINTS
 
-### 1. Alumni 
+### 1. Alumni Main Endpoint: (```https://hyf-almuni.herokuapp.com/alumni```)
 
-| Column 1       | Column 2     | Column 3     |
+#### a. Registering an Alumni 
+
+let's register a random alumni
+
+| Mothod | URL   | Input    | Output
 | :------------- | :----------: | -----------: |
-|  Cell Contents | More Stuff   | And Again    |
-| You Can Also   | Put Pipes In | Like this \| |
+|  POST| /register   | ```js
+{
+    "name":"alumni",
+    "surname": "hyf",
+    "email":"user@gmail.com",
+    "password": "123456"
+}```| all alumni information
