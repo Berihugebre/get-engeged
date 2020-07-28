@@ -44,9 +44,10 @@ let's register a random alumni
 | Mothod | URL   | Input    |
 | :------------- | :----------: | -----------: |
 |  POST| /register   | ```js
-{
+  {
     "name":"alumni",
     "surname": "hyf",
     "email":"user@gmail.com",
     "password": "123456"
-}```|
+ } 
+``` |
