@@ -39,7 +39,7 @@ Now let's EACH ENDPOINTS
 
 #### a. Registering an Alumni 
 
-let's register a random alumni with the following input
+ ```POST``` request to ```https://hyf-almuni.herokuapp.com/alumni/register``` with the following input: 
 
  ```js
   {
@@ -48,7 +48,3 @@ let's register a random alumni with the following input
     "email":"user@gmail.com",
     "password": "123456"
  } ```
-
-| Mothod | URL   | action    |
-| :------------- | :----------: | -----------: |
-|  POST | /register   | 1- Register or sign up  alumni|
