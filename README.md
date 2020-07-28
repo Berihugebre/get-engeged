@@ -39,15 +39,16 @@ Now let's EACH ENDPOINTS
 
 #### a. Registering an Alumni 
 
-let's register a random alumni
+let's register a random alumni with the following input
 
-| Mothod | URL   | Input    |
-| :------------- | :----------: | -----------: |
-|  POST| /register   | ```js
+ ```js
   {
     "name":"alumni",
     "surname": "hyf",
     "email":"user@gmail.com",
     "password": "123456"
- } 
-``` |
+ } ```
+
+| Mothod | URL   | action    |
+| :------------- | :----------: | -----------: |
+|  POST | /register   | 1- Register or sign up  alumni|
