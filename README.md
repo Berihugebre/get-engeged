@@ -134,5 +134,57 @@ If you make a sucessfull request with the valid token then you will get the foll
  ```
  On this request you can edit Alumni's ```name and surname```
  
- In General you can perform the following CRUD actions: 
+ #### E. Get all skills of a paricular alumni: (```https://hyf-almuni.herokuapp.com/alumni/:alumniId/skill```)
+  ```GET``` request to ```https://hyf-almuni.herokuapp.com/alumni/:5f201524c652920017ed9eeb/skill``` with: 
+ ```
+ HEADER => Authorization : <the token form the login response > 
+ ```
+  #### F. Get all language of a paricular alumni: (```https://hyf-almuni.herokuapp.com/alumni/:alumniId/language```)
+  ```GET``` request to ```https://hyf-almuni.herokuapp.com/alumni/:5f201524c652920017ed9eeb/language``` with: 
+ ```
+ HEADER => Authorization : <the token form the login response > 
+ ```
+  #### G. Get all social media info of a paricular alumni: (```https://hyf-almuni.herokuapp.com/alumni/:alumniId/meida```)
+  ```GET``` request to ```https://hyf-almuni.herokuapp.com/alumni/:5f201524c652920017ed9eeb/media``` with: 
+ ```
+ HEADER => Authorization : <the token form the login response > 
+ ```
+ In General you can perform the following CRUD actions on t: 
  
+ 
+| METHOD        | ROUTE         | Description  |
+| ------------- |:-------------:| -----:|
+| POST         | /register      | Register or sign up  alumni |
+| POST         | /login         | login alumni |
+| GET         | /               | Get all alumni (with COMPANY TOKEN) |
+| GET         | /:alumniId      | List a paricular Alumni |
+| PATCH         | /:alumniId    | Update a paricular Alumni |
+| GET         | /:alumniId/skill | List all programing language skills of a paricuar Alumni |
+| GET         | /:alumniId/language | List all language skills of a paricuar Alumni |
+| GET         | /:alumniId/media | List all social media details of a paricuar Alumni |
+
+### 2. Skill Main Endpoint: (```https://hyf-almuni.herokuapp.com/skill```)
+
+#### a. createing a skill for a particular Alumni 
+
+ Note: In every request don't forget to send the Autorizaion token in the header As every route is protected!
+ Now let's add a skill for the alumni we created above 
+ ```POST``` request to ```https://hyf-almuni.herokuapp.com/skill``` with the following input: 
+
+ ```js
+  {
+    "student":"5f201524c652920017ed9eeb", // which is the Id of the alumni
+    "skill": "javaScript",
+    "rate":4
+ } 
+ ```
+ In General CRUD actions on the endpoint (```https://hyf-almuni.herokuapp.com/skill```) are : 
+  
+| METHOD        | ROUTE         | Description  |
+| ------------- |:-------------:| -----:|
+| GET         | /               | List all skills  |
+| POST         | /               |Create a new skill  |
+| GET         | /:skillId      | List a paricular skill |
+| PATCH         | /:skillId    | Update a paricular skill |
+| DELETE         | /:skillId | Delete a paricular skill |
+
