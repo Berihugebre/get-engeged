@@ -125,4 +125,14 @@ If you make a sucessfull request with the valid token then you will get the foll
         "__v": 0
     }
 }
+```
+#### D. UPDATE paricular alumni: (```https://hyf-almuni.herokuapp.com/alumni/:alumniId```)
 
+ ```PTTCH``` request to ```https://hyf-almuni.herokuapp.com/alumni/:5f201524c652920017ed9eeb``` with: 
+ ```
+ HEADER => Authorization : <the token form the login response > 
+ ```
+ On this request you can edit Alumni's ```name and surname```
+ 
+ In General you can perform the following CRUD actions: 
+ 
