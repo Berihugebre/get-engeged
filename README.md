@@ -45,7 +45,7 @@ Now let's EACH ENDPOINTS
   {
     "name":"alumni",
     "surname": "hyf",
-    "email":"user@gmail.com",
+    "email":"alumni@gmail.com",
     "password": "123456"
  } 
  ```
@@ -56,7 +56,7 @@ Now let's EACH ENDPOINTS
 
  ```js
   {
-    "email":"user@gmail.com",
+    "email":"alumni@gmail.com",
     "password": "123456"
  } 
  ```
@@ -96,9 +96,9 @@ So you need to store the token in LocalStorage or cookies to access the other ro
 
  ```GET``` request to ```https://hyf-almuni.herokuapp.com/alumni/:5f201524c652920017ed9eeb``` with: 
  
- ```header :{
- Authorization : <the token form the login response > 
- }```
+ ```
+ HEADER => Authorization : <the token form the login response > 
+ ```
  
 If you make a sucessfull request with the valid token then you will get the following response : 
 
@@ -125,3 +125,4 @@ If you make a sucessfull request with the valid token then you will get the foll
         "__v": 0
     }
 }
+
