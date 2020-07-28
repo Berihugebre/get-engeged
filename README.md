@@ -165,7 +165,7 @@ If you make a sucessfull request with the valid token then you will get the foll
 
 ### 2. Skill Main Endpoint: (```https://hyf-almuni.herokuapp.com/skill```)
 
-#### a. createing a skill for a particular Alumni 
+#### a. createing a new skill for a particular Alumni 
 
  Note: In every request don't forget to send the Autorizaion token in the header As every route is protected!
  Now let's add a skill for the alumni we created above 
@@ -187,4 +187,140 @@ If you make a sucessfull request with the valid token then you will get the foll
 | GET         | /:skillId      | List a paricular skill |
 | PATCH         | /:skillId    | Update a paricular skill |
 | DELETE         | /:skillId | Delete a paricular skill |
+
+### 3. Language Main Endpoint: (```https://hyf-almuni.herokuapp.com/language```)
+
+#### a. createing a new language for a particular Alumni 
+
+ Note: In every request don't forget to send the Autorizaion token in the header As every route is protected!
+ Now let's add a lnguage for the alumni we created above 
+ ```POST``` request to ```https://hyf-almuni.herokuapp.com/language``` with the following input: 
+
+ ```js
+  {
+    "student":"5f201524c652920017ed9eeb", // which is the Id of the alumni
+    "language": "English",
+    "rate":5
+ } 
+ ```
+ In General CRUD actions on the endpoint (```https://hyf-almuni.herokuapp.com/language```) are : 
+  
+| METHOD        | ROUTE         | Description  |
+| ------------- |:-------------:| -----:|
+| GET         | /               | List all languages  |
+| POST         | /               |Create a new language  |
+| GET         | /:languageId      | List a paricular language |
+| PATCH         | /:languageId    | Update a paricular language |
+| DELETE         | /:languageId | Delete a paricular language |
+
+### 4. Social media Main Endpoint: (```https://hyf-almuni.herokuapp.com/media```)
+
+#### a. createing a new social media info for a particular Alumni 
+
+ Note: In every request don't forget to send the Autorizaion token in the header As every route is protected!
+ Now let's add a lnguage for the alumni we created above 
+ ```POST``` request to ```https://hyf-almuni.herokuapp.com/media``` with the following input: 
+
+ ```js
+  {
+    "student":"5f201524c652920017ed9eeb", // which is the Id of the alumni
+    "media": "github",
+    "url":"https://github.com/alumni"
+ } 
+ ```
+ In General CRUD actions on the endpoint (```https://hyf-almuni.herokuapp.com/language```) are : 
+  
+| METHOD        | ROUTE         | Description  |
+| ------------- |:-------------:| -----:|
+| GET         | /               | List all sociamedia  |
+| POST         | /               |Create a new media  |
+| GET         | /:mediaId      | List a paricular media |
+| PATCH         | /:mediaId    | Update a paricular media |
+| DELETE         | /:mediaId | Delete a paricular media |
+
+### 5. CV Main Endpoint: (```https://hyf-almuni.herokuapp.com/cv```)
+
+#### a. upload a cv for a particular Alumni 
+
+ Note: In every request don't forget to send the Autorizaion token in the header As every route is protected!
+ Now let's add a lnguage for the alumni we created above 
+ ```POST``` request to ```https://hyf-almuni.herokuapp.com/cv``` with the following input: 
+
+ ```js
+  {
+    "student":"5f201524c652920017ed9eeb", // which is the Id of the alumni
+    "image": alumni.pdf
+ } 
+ ```
+ In General CRUD actions on the endpoint (```https://hyf-almuni.herokuapp.com/cv```) are : 
+  
+| METHOD        | ROUTE         | Description  |
+| ------------- |:-------------:| -----:|
+| POST         | /               |upload a new cv  |
+| GET         | /:cvId      | List a cv|
+| PATCH         | /:cvId    | Update a paricular cv |
+| DELETE         | /:cvId | Delete a paricular cv |
+
+
+### 6. Profile Image Main Endpoint: (```https://hyf-almuni.herokuapp.com/image```)
+
+#### a. upload a an image for a particular Alumni 
+
+ Note: In every request don't forget to send the Autorizaion token in the header As every route is protected!
+ Now let's add a lnguage for the alumni we created above 
+ ```POST``` request to ```https://hyf-almuni.herokuapp.com/image``` with the following input: 
+
+ ```js
+  {
+    "student":"5f201524c652920017ed9eeb", // which is the Id of the alumni
+    "image": alumni.jpg
+ } 
+ ```
+ In General CRUD actions on the endpoint (```https://hyf-almuni.herokuapp.com/image```) are : 
+  
+| METHOD        | ROUTE         | Description  |
+| ------------- |:-------------:| -----:|
+| POST         | /               |upload a new image  |
+| GET         | /:cvId      | List an image|
+| PATCH         | /:cvId    | Update a paricular image |
+| DELETE         | /:cvId | Delete a paricular image |
+
+## 7 . Company main Endpoint: (```https://hyf-almuni.herokuapp.com/company```)
+
+#### a. Registering a company
+
+ ```POST``` request to ```https://hyf-almuni.herokuapp.com/company/register``` with the following input: 
+
+ ```js
+  {
+    "name":"Marry",
+    "surname": "Katherina",
+    "companyName": "Twipe Mobile",
+    "email":"twipe@gmail.com",
+    "password": "123456"
+ } 
+ ```
+
+#### b. login an Alumni 
+
+ ```POST``` request to ```https://hyf-almuni.herokuapp.com/company/login``` with the following input: 
+
+ ```js
+  {
+     "email":"twipe@gmail.com",
+     "password": "123456"
+ } 
+ ```
+ 
+  In General CRUD actions on the endpoint (```https://hyf-almuni.herokuapp.com/company```) are : 
+  
+| METHOD        | ROUTE         | Description  |
+| ------------- |:-------------:| -----:|
+| POST         | /register      | List all sociamedia  |
+| POST         | / login        |Create a new media  |
+| GET          | /:companyId    | List a paricular company |
+| PATCH        | /:companyId    | list a paricula company |
+
+
+
 
