@@ -301,7 +301,7 @@ If you make a sucessfull request with the valid token then you will get the foll
  } 
  ```
 
-#### b. login an Alumni 
+#### b. login a Company
 
  ```POST``` request to ```https://hyf-almuni.herokuapp.com/company/login``` with the following input: 
 
@@ -316,10 +316,10 @@ If you make a sucessfull request with the valid token then you will get the foll
   
 | METHOD        | ROUTE         | Description  |
 | ------------- |:-------------:| -----:|
-| POST         | /register      | List all sociamedia  |
-| POST         | / login        |Create a new media  |
+| POST         | /register      | register a comapny  |
+| POST         | / login        | login a company |
 | GET          | /:companyId    | List a paricular company |
-| PATCH        | /:companyId    | list a paricula company |
+| PATCH        | /:companyId    | list a paricular company |
 
 
 
